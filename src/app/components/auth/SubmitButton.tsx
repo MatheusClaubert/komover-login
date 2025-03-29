@@ -1,15 +1,25 @@
 "use client";
+
 import { Button } from "@mui/material";
+import { useRouter } from "next/navigation";
 
 interface SubmitButtonProps {
   text: string;
 }
 
 const SubmitButton = ({ text }: SubmitButtonProps) => {
+  const router = useRouter();
+
+  const handleSubmit = () => {
+    router.push("/dashboard"); // Redireciona para a tela de login
+  };
+
   return (
     <Button
       fullWidth
+      type="button"
       variant="contained"
+      onClick={handleSubmit}
       sx={{
         backgroundColor: "#F59E0B",
         "&:hover": { backgroundColor: "#d97706" },
