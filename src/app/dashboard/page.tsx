@@ -1,12 +1,20 @@
-// app/dashboard/page.tsx
-const Dashboard = () => {
-  return (
-    <div>
-      <h1>Bem-vindo à sua Dashboard!</h1>
-      <h1 className="bg-amber-300 text-black">EIIIIIIIIIIIIII GLAUCIA</h1>
+// 📌 dashboard/page.tsx
+import React from "react";
+import Sidebar from "@/app/components/dashboard/SideBar";
+import Header from "@/app/components/dashboard/Header";
+import StatsCards from "@/app/components/dashboard/StatsCards";
 
+
+const DashboardPage = () => {
+  return (
+    <div className="flex h-screen bg-gray-100">
+      <Sidebar />
+      <main className="flex-1 p-6">
+        <Header />
+        <StatsCards />
+      </main>
     </div>
   );
 };
 
-export default Dashboard;
+export default DashboardPage;
