@@ -1,9 +1,8 @@
-// 📌 dashboard/page.tsx
 import React from "react";
 import Sidebar from "@/app/components/dashboard/SideBar";
 import Header from "@/app/components/dashboard/Header";
 import StatsCards from "@/app/components/dashboard/StatsCards";
-
+import PatientTable from "@/app/components/dashboard/PatientTable"; // 🔹 Importa a Tabela
 
 const DashboardPage = () => {
   return (
@@ -12,6 +11,12 @@ const DashboardPage = () => {
       <main className="flex-1 p-6">
         <Header />
         <StatsCards />
+
+        {/* 🔹 Adicionando a Tabela de Pacientes */}
+        <section className="mt-6">
+          <PatientTable />
+        </section>
+
       </main>
     </div>
   );
