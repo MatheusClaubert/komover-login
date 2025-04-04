@@ -1,8 +1,8 @@
 import React from "react";
-import Sidebar from "@/app/components/dashboard/SideBar";
-import Header from "@/app/components/dashboard/Header";
-import StatsCards from "@/app/components/dashboard/StatsCards";
-import PatientTable from "@/app/components/dashboard/PatientTable"; // 🔹 Importa a Tabela
+import Sidebar from "@/app/components/tela/SideBar";
+import Header from "@/app/components/tela/Header";
+import StatsCards from "@/app/components/tela/StatsCards";
+import PatientTable from "@/app/components/tela/PatientTable"; // 🔹 Importa a Tabela
 
 const DashboardPage = () => {
   return (
